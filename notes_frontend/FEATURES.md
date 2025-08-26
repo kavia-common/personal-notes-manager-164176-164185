@@ -11,6 +11,7 @@ Key features:
 - Theming (light/dark) respecting prefers-color-scheme with manual toggle
 - Responsive behaviors for tablet/mobile (editor overlay placeholder via CSS classes)
 - Accessibility-minded controls and focusable inputs
+- Chatbot (floating button) that searches the web via Perplexity and shows conversational responses with sources
 
 Tech:
 - React 18, React Router v6
@@ -19,4 +20,4 @@ Tech:
 - UUID for note IDs
 
 Env:
-- No external environment variables required for the frontend demo.
+- REACT_APP_PERPLEXITY_API_KEY required to enable the chatbot web search.

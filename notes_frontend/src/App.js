@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState, useCallback, createContext, useCon
 import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { formatDistanceToNow } from 'date-fns';
+import Chatbot from "./components/Chatbot/Chatbot.jsx";
 import './App.css';
 
 /**
@@ -386,6 +387,8 @@ function Shell({ filter }) {
       <Sidebar />
       <NotesList filter={filter} />
       <EditorPane />
+      {/* Floating chatbot accessible on all main screens */}
+      <Chatbot />
     </div>
   );
 }
